@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             display: flex;
+                /* align-items: center; */
+                justify-content: center;
+            background-color: beige;
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                margin-top: 100px;
+                width: 600px;
+                background-color: white;
+                
+            }
+            
+            .photo img{
+                height:500px ;
+                width: 330px;
+            margin-bottom: -3px;
+            }
+            .text{
+                margin-left: 20px;
+                margin-top: -10px;
+            }
+            .text h6{
+                letter-spacing: 10px;
+                font-family: monospace;
+                color: rgba(35, 35, 35, 0.805);
+                font-size: 10px;
+            }
+            .text h2{
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 40px;
+                margin-top: 5px;
+                /* height: 0px; */
+                /* margin-bottom: 20; */
+               /* border: 2px solid black; */
+               
+            }
+            .text p{
+                color: rgba(35, 35, 35, 0.805);
+                font-family: Arial, Helvetica, sans-serif;
+           }
+           .num{
+            display: flex;
+            align-items: center;
+            justify-self: left;
+            margin-left: -20px;
+           }
+          
+           .num h1{
+            color: green;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: 40px;
+            display: flex;
+            margin-top: 10px;
+            margin-left: 30px;
+           
+          
+           }
+           .num strike{
+              color: rgba(86, 86, 86, 0.805);
+                font-family: monospace;
+                font-size: 15px;
+                margin-bottom: 10px;
+                margin-left: -13px;
+           }
+           .text button{
+            padding: 14px 50px ;
+            background-color: green;
+            border: none;
+           border-radius: 10px;
+           }
+           @media (max-width:800px) {
+            .container{
+                flex-direction: column;
+                width: 90%;
+            }
+            .photo img{
+                width: 100%;
+                height: auto;
+            }
+            .text{
+                margin: 20px;
+            }
+           }
+         
+    </style>
+</head>
+<body>
+<div class="container">
+   <div class="photo">
+        <img src="image-product-desktop.jpg">
+        </div> 
+        <div class="text">
+            <h6>PERFUME</h6>
+          
+            <h2>Gabrielle Essence Eau De Parfum</h2>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,Perfumer-Creator for the House of CHANEL. </p>
+            <div class="num">
+            <H1>$149.99 </H1><strike>$169.99</strike>
+            </div>
+            <button> 
+                <img src="icon-cart.svg">
+                Add to icon-cart
+            </button>
+        </div>
+
+    
+</div>
+</body>
+</html>
